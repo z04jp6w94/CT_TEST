@@ -1,0 +1,753 @@
+@charset "utf-8";
+/*
+	+ 一般 UI
+		- 基本框架
+	----------------------------------------------------------
+*/
+#DivMain {
+	overflow: hidden;
+}
+#FrameTop {
+	height: 60px;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "新細明體", "微軟正黑體";
+	font-size: 12px;
+	color: #ccc;
+	line-height: 60px;
+	margin-top: -60px;
+}
+#FrameTopLeft {
+	width: 250px;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	text-align : center;
+	position: relative;
+	overflow: hidden;
+}
+#FrameLeft {
+	background-color: #313940;
+	/*width: 250px;*/
+	position: absolute;
+	z-index: 99;
+}
+#FrameRight {
+	background-color: #fff;
+	position: absolute;
+	/*left: 250px;*/
+}
+#FrameTopLeft a:link, #FrameTopLeft a:visited, #FrameTopLeft a:hover, #FrameTopLeft a:active{
+	/*color: #000;*/
+	font-size: 12px;
+	font-family:"verdana", "arial";
+	text-decoration: none;
+}
+#FrameTopLeft img {
+	vertical-align : middle;
+	margin-right: 5px;
+}
+#FrameTopRight {
+/*	padding: 0 18px 0 18px;
+	*/
+}
+#FrameTopRight i{
+	vertical-align : middle;
+	/*	padding: 0 9px 2px 0;*/
+	display: block;
+	float: left;
+	margin: 15px 0 0 15px;
+	width: 30px;
+	height: 28px;
+	font-size: 14px;
+	line-height: 28px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #E2E2E2;
+	border-radius: 3px;
+	text-align: center;
+}
+#FrameTopRight input {
+	width: 174px;
+	height: 34px;
+	background-color: #e6e9ed;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.FrameLineImgLink {
+	cursor:col-resize;
+}
+.col-xs-3 {
+	width: 10.5%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.bg-white {
+	background: #F6F8F9;
+}
+.bg-dark {
+	background-color: #434A54;
+}
+.bg-primary {
+	background-color: #37BC9B;
+}
+.bg-info {
+	background-color: #3BAFDA;
+}
+.bg-success {
+	background-color: #8CC152;
+}
+.bg-danger {
+	background-color: #E9573F;
+}
+.bg-warning {
+	background-color: #F6BB42;
+}
+.bg-white{
+	background: #F6F8F9;
+}
+.box-theme{
+	position: fixed;
+	top: 60px;
+	left: 0px;
+	background: #242A34;
+	z-index: 99;
+	width: 200px;
+	display: none;
+}
+.inner-panel{
+	position: relative;
+	padding: 0 10px;
+}
+.xs-tiles{
+	cursor: pointer;
+	margin: 10px 0;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.xs-tiles .quarter-tiles{
+	height: 6px;
+}
+.xs-tiles .half-tiles{
+	height: 12px;
+}
+.xs-tiles .tigaperempat-tiles{
+	height: 18px;
+}
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.box-app{
+	position: fixed;
+	top: 60px;
+	left: 0px;
+	background: #242A34;
+	z-index: 99;
+	width: 200px;
+	display: none;
+}
+
+#MainTopMenu{
+	position: absolute;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: #f5f5f5;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E2E2E2;
+	padding: 0 0 0 15px;
+	z-index: 3;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E2E2E2;
+	/*
+			-webkit-box-shadow: 0 1px 20px rgba(0,0,0,0.25);
+			-moz-box-shadow: 0 1px 20px rgba(0,0,0,0.25);
+			box-shadow: 0 1px 20px rgba(0,0,0,0.25);
+	*/
+	-webkit-box-shadow: inset 0 1px 20px rgba(0,0,0,0.08);
+	-moz-box-shadow: inset 0 1px 20px rgba(0,0,0,0.08);
+	box-shadow: inset 0 1px 20px rgba(0,0,0,0.08);
+}
+#MainTitle{
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	top: 46px;
+	z-index: 2;
+}
+#MainDesc{
+	position: relative;
+	padding-top: 55px;
+	z-index: 0;
+}
+#MainList{
+	position: relative;
+	padding-top: 45px;
+	z-index: 0;
+}
+#MainGrid{
+	width:100%;
+	height:100%;
+}
+#Main{
+	width: 100%;
+	background-color:#FFF;
+	position: absolute;
+}
+.MenuLeft{
+	float: left;
+	top: -2px;
+	*top: 0px;
+	position: relative;
+}
+.MenuRight{
+	float: right;
+	top: -2px;
+	*top: 0px;
+	position: relative;
+	padding: 0 10px 0 0;
+	margin: 0 10px 0 0;
+}
+.MenuLeft, .MenuRight{
+	font-family: Verdana, Arial, "細明體";
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+/*
+	+ 一般 UI
+		- 查詢
+	----------------------------------------------------------
+*/
+#MainTip{
+	font-family: "verdana", "arial", "新細明體";
+	font-size: 12px;
+	position: fixed;
+	z-index: 998;
+	background:#FFF;
+	width: 500px;
+	top: -10000px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	box-shadow:0 1px 20px rgba(0%,0%,0%,0.35);
+}
+#MainTip ul li{
+	line-height: 29px;
+}
+#MainTipBg{
+	background-color: #FFF;
+	position: absolute;
+	z-index: 997;
+	top: 0px;
+	display: none;
+}
+ul.TipMenunav, ul.TipMenunav li, ul.TipMenunav li ul{
+	list-style-type:none;
+	margin:0;
+	padding:0
+}
+ul.TipMenunav{
+	margin-left: 0px;
+}
+ul.TipMenunav li{
+	float:left;
+	text-align: center;
+}
+.TipBtn{
+	background-color: #f2f5f8;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	width: 100%;
+}
+.TipBtn ul li{
+	margin: 10px 0 10px 10px;
+}
+.TipIpt ul li{
+	margin: 5px 10px 5px 10px;
+}
+/*
+	+ 一般 UI
+		- 功能列
+	----------------------------------------------------------
+*/
+ul.Menunav, ul.Menunav li{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+ul.Menunav{
+	margin: 10px 0 0 0;
+}
+ul.Menunav li{
+	float:left;
+	text-align: center;
+	padding-right: 10px;
+}
+.MenuLeft ul.Menunav a, .TipBtn a, .MenuRight ul.Menunav a, .TipBtn a{
+	float:left;
+	text-decoration:none;
+	height: 27px;
+	line-height: 27px;
+}
+/*
+	+ 一般 UI
+		- 類別選單
+	----------------------------------------------------------
+*/
+.TypeMenu{
+	float:left;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.TypeMenu ul li{
+	float:left;
+	height: 29px;
+}
+ul.TypeMenu .TypeMenu-Top{
+	width: 8px;
+	height: 29px;
+	background: url(../Images/Btn.png) 0 -87px no-repeat;
+	display: block;
+	padding: 0px;
+}
+ul.TypeMenu .TypeMenu-Title{
+	height: 29px;
+	line-height: 29px;
+	background: url(../Images/TypeMenuBtnBg-A.png) 0 0 repeat-x;
+	padding-right: 0px;
+	color: #444;
+	font-weight: bold;
+	padding: 0 10px 0 10px;
+}
+ul.TypeMenu .TypeMenu-Bottom{
+	width: 8px;
+	height: 29px;
+	background: url(../Images/Btn.png) -8px -87px no-repeat;
+	display: block;
+	padding: 0px;
+}
+ul.TypeMenu .TypeMenu-Content{
+	position: absolute;
+	width: 263px;
+	top: 29px;
+	left: 0px;
+	float:left;
+	list-style-type:none;
+	padding-right: 0px;
+	background-color: #FFF;
+	border: 1px solid #cbcbcb;
+	display: none;
+	z-index: 999;
+}
+.TypeMenu-Content ul{
+	float:left;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.TypeMenu-Content ul li a{
+	width: 233px;
+	line-height: 29px;
+	text-align: left;
+	padding: 0 0 0 30px;
+	color: #000;
+}
+.TypeMenu-Content ul li a:hover{
+	background:#EEE;
+}
+/*
+	+ 一般 UI
+		- 按鈕
+	----------------------------------------------------------
+*/
+.red a{
+	min-width: 40px;
+	height: 27px;
+	background-color: #cc3333;
+	border-radius: 3px;
+	padding: 0 10px;
+	border: 1px solid #9f1a1a;
+}
+.red a:hover{
+	background-color: #a93232;
+	border-color:#f7baba;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(169, 50, 50, .6);
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(169, 50, 50, .6);
+}
+.red a:active{
+	background-color: #a93232;
+}
+.ble a{
+	min-width: 40px;
+	height: 27px;
+	background-color: #377cea;
+	border-radius: 3px;
+	padding: 0 10px;
+	border: 1px solid #225cb9;
+}
+.ble a:hover{
+	background-color: #1f60c8;
+}
+.ble a:active{
+	background-color: #1f60c8;
+}
+.gray a{
+	min-width: 38px;
+	height: 27px;
+	background-color: #f5f5f5;
+	border: 1px solid #c6c6c6;
+	border-radius: 3px;
+	padding: 0 10px;
+}
+.gray a:hover{
+	/*background-color: #eeecec;*/
+}
+.gray a:active{
+	background-color: #eeecec;
+}
+.green a{
+	min-width: 38px;
+	height: 27px;
+	background-color: #0aa730;
+	border: 1px solid #077a23;
+	border-radius: 3px;
+	padding: 0 10px;
+}
+.green a:hover{
+	background-color: #077a23;
+	border-color:#0aa730;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(7, 122, 35, .6);
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(7, 122, 35, .6);
+}
+.green a:active{
+	background-color: #077a23;
+}
+.ble a:hover, .gray a:hover{
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+/*
+	+ 一般 UI
+		- input
+	----------------------------------------------------------
+*/
+#MainDesc input[type="text"], #MainTip input[type="text"]{
+	height: 25px;
+	border: 1px solid #c9cbd0;
+	text-indent: 5px;
+	border-radius: 3px;
+	font-family: Verdana, Arial, "微軟正黑體", "新細明體";
+}
+textarea{
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	font-family: "verdana", "arial", "新細明體";
+	font-size: 12px;
+	padding: 0 5px 0 5px;
+	line-height: 20px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.form-control {
+	font-family: "verdana", "arial", "新細明體";
+	font-size: 12px;
+	display:block;
+	/*width:100%;*/
+	height: 29px;
+	padding:5px 12px;
+	line-height:1.42857143;
+	color:#555;
+	background-color:#fff;
+	background-image:none;
+	border:1px solid #ccc;
+	border-radius:3px;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition:border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	float: left;
+	margin-right: 8px;
+}
+.form-control:focus {
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control::-moz-placeholder {
+	color:#777;
+	opacity:1;
+}
+.form-control:-ms-input-placeholder {
+	color:#777;
+}
+.form-control::-webkit-input-placeholder {
+	color:#777;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	cursor:not-allowed;
+	background-color:#eee;
+	opacity:1;
+}
+
+/*
+	+ 一般 UI
+		- 文字
+	----------------------------------------------------------
+*/
+.power-Font03 {
+	font-family: Verdana, Arial, "細明體";
+	font-size: 9pt;
+	color: #000000;
+}
+/*
+	+ 一般 UI
+		- 其他
+	----------------------------------------------------------
+*/
+/*scrollbar*/
+::-webkit-scrollbar{width:12px;height:12px;}
+::-webkit-scrollbar-thumb{border:1px solid #B8B8B8;-webkit-border-radius:0px;border-radius:0px;background:#ccc;}
+::-webkit-scrollbar-track,::-webkit-scrollbar-corner{background:#eee;}
+/*刪除連結虛線框*/
+a {blr:expression(this.onFocus=this.blur());}
+a:focus {-moz-outline-style: none;}
+/*設定手指*/
+.SetCursor{
+	cursor: pointer;
+}
+/*
+	+ 一般 UI
+		- 上傳
+	----------------------------------------------------------
+*/
+ul.uploadnav, ul.defaultnav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.uploadnav li, ul.defaultnav li{
+	float: left;
+	margin: 0 10px 10px 0;
+}
+ul.uploadnav li.img, ul.defaultnav li.img{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+	width: 160px;/*1208*/
+	height: 175px;/*1208*/
+	text-align : center;
+	line-height : 100px;
+	position: relative;
+}
+ul.uploadnav li.imgbg, ul.defaultnav li.imgbg{
+	background : #636e80 url(../../UpLoad/BackOffice/UI/Icon_UpLoading.gif) no-repeat center center;
+}
+ul.uploadnav li.img img, ul.defaultnav li.img img{
+	vertical-align: middle;
+	display: none;
+}
+.loadingbar{
+	position: absolute;
+	height: 3px;
+	z-index: 2;
+	/*
+	width: 80px;
+	top: 90px;
+	left: 10px;
+	*/
+	width: 80%;
+	bottom: 10px;
+	left: 10%;
+}
+.loadingbarcolor{
+	height: 3px;
+	width: 100%;
+	background-color: #51e46a;
+}
+.loadingdel a{
+	position: absolute;
+	z-index: 2;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	min-width: 40px;
+	height: 20px;
+	background-color: #cc3333;
+	border-radius: 3px;
+	padding: 0px;
+	border: 1px solid #9f1a1a;
+	line-height: 20px;
+	display: none;
+}
+.loadingdel a:hover{
+	background-color: #a93232;
+}
+
+ul.uploadnav li input[type="text"]{
+	position: absolute;
+	z-index: 2;
+	top: 75px;
+	left:8px;
+	cursor: pointer;
+	height: 20px;
+	border-radius: 3px;
+	border: 1px solid #999;
+	line-height: 20px;
+}
+/*
+	+ 一般 UI
+		- PopUp
+	----------------------------------------------------------
+*/
+#PopUpMenu{
+	position: absolute;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: #f5f5f5;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E2E2E2;
+	padding: 0 0 0 10px;
+	z-index: 3;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E2E2E2;
+	-webkit-box-shadow: inset 0 1px 20px rgba(0,0,0,0.08);
+	-moz-box-shadow: inset 0 1px 20px rgba(0,0,0,0.08);
+	box-shadow: inset 0 1px 20px rgba(0,0,0,0.08);
+	bottom: 0px;
+}
+#PopUpMainDesc{
+	position: relative;
+	z-index: 0;
+}
+#PopUpMain{
+	width: 100%;
+	height: 100%;
+	background-color:#FFF;
+	position: absolute;
+}
+/*
+	+ TreeView
+	----------------------------------------------------------
+*/
+#TreeView {
+	position:relative;
+	width:250px;
+	text-overflow: ellipsis;
+	overflow: auto;
+	overflow-x:hidden;
+	font-family: Verdana, Arial, "新細明體", "標楷體";
+	font-size: 12px;
+	vertical-align: baseline;
+}
+.TreeviewSysFile{
+	cursor: pointer;
+}
+.TreeviewFncFile{
+	cursor: pointer;
+	height: 45px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	line-height: 45px;
+}
+.TreeviewFncFile .Arrow{
+	/*
+	top: 15px;
+	right: 8px;
+	position: absolute;
+	*/
+	/*
+	float: right;
+	margin-top: 13px;
+	*/
+	margin: 0 0 0 120px;
+	font-size: 15px;
+}
+.TreeviewSpan{
+	cursor:pointer;
+	width:250px;
+	height: 35px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.TreeviewSpan a{
+	text-decoration:none;
+	display: block;
+}
+.fontcolor01{
+	color: #FF3366;
+	padding-left: 58px;
+}
+.fontcolor02{
+	color: #999999;
+	padding-right: 22px;
+}
+
+
+
+
+
+
+A.black9:link   {color: #000000; font-size: 9pt; font-family:"arial";text-decoration:none;}
+A.black9:visited{color: #000000; font-size: 9pt; font-family:"arial";text-decoration:none;}
+A.black9:hover  {color: #CC3333; font-size: 9pt; font-family:"arial";text-decoration:none;}
+A.black9:active {color: #000000; font-size: 9pt; font-family:"arial";text-decoration:none;}
+
+A.LCC3333:link   {color: #CC3333; font-size: 11px; font-family:"verdana,arial";text-decoration:none;}
+A.LCC3333:visited{color: #CC3333; font-size: 11px; font-family:"verdana,arial";text-decoration:none;}
+A.LCC3333:hover  {color: #CC3333; font-size: 11px; font-family:"verdana,arial";text-decoration:underline;}
+A.LCC3333:active {color: #CC3333; font-size: 11px; font-family:"verdana,arial";text-decoration:none;}
+
+A.L6E94CE:link   {color: #6E94CE; font-size: 11px; font-family:"verdana,arial";text-decoration:none;}
+A.L6E94CE:visited{color: #6E94CE; font-size: 11px; font-family:"verdana,arial";text-decoration:none;}
+A.L6E94CE:hover  {color: #6E94CE; font-size: 11px; font-family:"verdana,arial";text-decoration:underline;}
+A.L6E94CE:active {color: #6E94CE; font-size: 11px; font-family:"verdana,arial";text-decoration:none;}
+
+A.black8:link   {color: #000000; font-size: 9px; font-family:"verdana,arial";text-decoration:none;}
+A.black8:visited{color: #000000; font-size: 9px; font-family:"verdana,arial";text-decoration:none;}
+A.black8:hover  {color: #CC3333; font-size: 9px; font-family:"verdana,arial";text-decoration:underline;}
+A.black8:active {color: #000000; font-size: 9px; font-family:"verdana,arial";text-decoration:none;}
+
+A.black9:link   {color: #000000; font-size: 9pt; font-family:"arial";text-decoration:none;}
+A.black9:visited{color: #000000; font-size: 9pt; font-family:"arial";text-decoration:none;}
+A.black9:hover  {color: #CC3333; font-size: 9pt; font-family:"arial";text-decoration:underline;}
+A.black9:active {color: #000000; font-size: 9pt; font-family:"arial";text-decoration:none;}
+
+A.FF3366:link   {color: #FF3366; font-size: 9pt; font-family:"verdana,arial,細明體";text-decoration:none}
+A.FF3366:visited{color: #FF3366; font-size: 9pt; font-family:"verdana,arial,細明體";text-decoration:none}
+A.FF3366:hover  {color: #000000; font-size: 9pt; font-family:"verdana,arial,細明體";text-decoration:underline;}
+A.FF3366:active {color: #FF3366; font-size: 9pt; font-family:"verdana,arial,細明體";text-decoration:none}
+
+A.LFFFFFF, .LFFFFFF	:link   {color: #FFFFFF; font-size: 12px; font-family:"新細明體", "arial"; font-weight: bold;}
+A.LFFFFFF, .LFFFFFF	:visited{color: #FFFFFF; font-size: 12px; font-family:"新細明體", "arial"; font-weight: bold;}
+A.LFFFFFF, .LFFFFFF	:hover  {color: #FFFFCC; font-size: 12px; font-family:"新細明體", "arial"; font-weight: bold;}
+A.LFFFFFF, .LFFFFFF	:active {color: #FFFFFF; font-size: 12px; font-family:"新細明體", "arial"; font-weight: bold;}
+
+A.L333333, .L333333	:link   {color: #333333; font-size: 12px; font-family:"新細明體", "arial"; font-weight: bold;}
+A.L333333, .L333333	:visited{color: #333333; font-size: 12px; font-family:"新細明體", "arial"; font-weight: bold;}
+A.L333333, .L333333	:hover  {color: #333333; font-size: 12px; font-family:"新細明體", "arial"; font-weight: bold;}
+A.L333333, .L333333	:active {color: #333333; font-size: 12px; font-family:"新細明體", "arial"; font-weight: bold;}

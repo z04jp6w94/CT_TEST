@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... 擴思訊後台 1440以上,1600以下 ... */
+.main .header .logoAndUser ul li .sized-text, .main .header .topMenu .hor-box-text, .main .header .breadCrumb ul li .hor-box-text, .main .doc .sized-text-normal {
+  font-size: 1.375em;
+  /*22px*/
+}
+
+.main .doc .sized-text-1, .main .doc .hor-box-text-large, .main .doc .hor-box-text-normal {
+  font-size: 1.25em;
+  /*20px*/
+}
+
+/*12px*/
+/*19px*/
+/*26px*/
+/*29px*/
+.main .sizeTag .in1440-1600 {
+  display: block;
+}
+
+.main {
+  min-width: 90%;
+  max-width: 85%;
+}
+
+.main .header .topMenu .hor-box-text {
+  padding: 1.18em 0;
+  /*19px*/
+}
+
+.main .header .breadCrumb ul li .hor-box-text {
+  padding: 0.75em 0;
+}
+
+.main .header .item-4 tr td .holder .subLink {
+  top: 3.35em;
+}
+
+.main .doc {
+  padding: 0 3%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main .doc .spacingBlock {
+  padding-top: 1.8125em;
+}
+
+.main .doc .hor-box-text-large {
+  padding: 1.18em 0;
+}
+
+.main .doc .hor-box-text-normal {
+  padding: 0.75em 0;
+}
