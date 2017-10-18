@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... 擴思訊後台  ... */
+.main .doc .optionMoreBtn,
+.main .doc .optionSaveBtn,
+.main .doc .optionDoBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main .doc .optionSaveBtn {
+  margin: 0 auto;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main .doc {
+  /*依據不同解析度設定
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding: 0 3%;
+  */
+}
+
+.main .doc .sized-text-normal {
+  /*依據不同解析度設定*/
+}
+
+.main .doc .sized-text-1 {
+  /*依據不同解析度設定*/
+}
+
+.main .doc .spacingBlock {
+  /*依據不同解析度設定*/
+}
+
+.main .doc .spacingBlock.hr-dot {
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-image: url("../images/hr_dot.gif");
+}
+
+.main .doc {
+  /*上方與左方是TH 的表格統一設定 begin*/
+  /*上方與左方是TH 的表格統一設定 end*/
+  /*左方是TH 的表格統一設定 begin*/
+  /*左方是TH 的表格統一設定 begin*/
+  /*一些共用的按鈕 begin*/
+  /*一些共用的按鈕 end*/
+  /*網頁末端靠右的存檔 begin*/
+}
+.main .doc .topAndLeftHeader {
+  width: 100%;
+  border-collapse: collapse;
+}
+.main .doc .topAndLeftHeader td,
+.main .doc .topAndLeftHeader th {
+  font-weight: normal;
+  text-align: center;
+}
+.main .doc .topAndLeftHeader .topHeader {
+  padding: 0 10px;
+}
+.main .doc .topAndLeftHeader th {
+  white-space: nowrap;
+}
+.main .doc .leftHeader {
+  width: 100%;
+  border-collapse: collapse;
+}
+.main .doc .leftHeader tr th {
+  /*min-width: 12%;*/
+  max-width: 16%;
+  width: 13.5%;
+  width: 14% \9;
+  text-align: left;
+  font-weight: normal;
+  white-space: nowrap;
+}
+.main .doc .hor-box-text-large,
+.main .doc .hor-box-text-normal {
+  display: block;
+  line-height: 1.2;
+}
+.main .doc .optionMoreBtn,
+.main .doc .optionSaveBtn,
+.main .doc .optionDoBtn {
+  display: block;
+  float: right;
+  width: 180px;
+  height: 50px;
+  background-color: #87b2e0;
+  color: #fff;
+  font-weight: bold;
+}
+.main .doc .optionSaveBtn {
+  float: none;
+  width: 160px;
+  height: 60px;
+  background-color: #e07297;
+}
+.main .doc .optionDoBtn {
+  float: none;
+  width: 160px;
+  height: 60px;
+  color: #fff;
+  background-color: #e07297;
+}
+.main .doc .optionDoBtn.current {
+  background-color: #f19ec2;
+}
+.main .doc .optionDoBtn.alignCenter {
+  margin: 0 auto;
+}
+.main .doc .btnDisabled {
+  background-color: #c5c5c5;
+  color: #fff;
+}
+.main .doc .finalControl li {
+  float: right;
+  margin-left: 15px;
+}
+.main .doc .switcher li {
+  float: left;
+  margin-right: 15px;
+}
+.main .doc .itemMover .box {
+  width: 230px;
+  border: #a19f9f solid 1px;
+}
+.main .doc .itemMover .box .title {
+  padding: 0.25em;
+  background-color: #595656;
+  color: #fff;
+}
+.main .doc .itemMover .box select {
+  width: 100%;
+  height: 110px;
+}
+.main .doc .itemMover .box select option {
+  padding: 0.25em 0.5em;
+}
+.main .doc .itemMover .btns {
+  width: 40px;
+}
+.main .doc .itemMover .btns button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+.main .doc .itemMover .btns .toRight {
+  background-image: url("../images/item_mover_to_right.gif");
+}
+.main .doc .itemMover .btns .toLeft {
+  background-image: url("../images/item_mover_to_left.gif");
+}

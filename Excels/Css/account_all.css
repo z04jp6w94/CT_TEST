@@ -1,0 +1,665 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... 賽珍珠基金會 ... */
+.scoreTable table .subject, .classNote .text, .reply .text,
+.reply .text p, .examContent dd, .classContent h3, .classContent > p, .classContent ol li a span, .examContent h3, .examContent dt span {
+  font-family: 黑體, 'Microsoft YaHei', 微软雅黑体, 微軟雅黑體, 'Microsoft JhengHei', 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+.scoreTable table .subject, .classNote .text, .reply .text,
+.reply .text p, .examContent dd, .scoreTable .title, .classNote .wrapper .title, .singleClassTitle .wrapper .title, .classContent h3, .examContent h3 {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.scoreTable table .subject, .classNote .text, .reply .text,
+.reply .text p, .examContent dd {
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  color: #333333;
+  line-height: 1.8;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.scoreTable {
+  margin-bottom: 30px;
+  width: 889px;
+}
+.scoreTable .upBorder,
+.scoreTable .downBorder {
+  display: block;
+  width: 889px;
+  height: 5px;
+  background-repeat: no-repeat;
+}
+.scoreTable .upBorder {
+  background-image: url("../images/account_table_bg_01.gif");
+}
+.scoreTable .downBorder {
+  background-image: url("../images/account_table_bg_02.gif");
+}
+.scoreTable .title {
+  padding-left: 50px;
+  margin-bottom: 10px;
+  /*內文小標*/
+  font-size: 132.6%;
+  color: #666;
+  font-weight: bold;
+  line-height: 40px !important;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.scoreTable .title.complete {
+  background-image: url("../images/account_complete_01.gif");
+}
+.scoreTable .title.incomplete {
+  background-image: url("../images/account_complete_02.gif");
+}
+.scoreTable table {
+  width: 100%;
+  border-right: #cacaca solid 1px;
+  border-left: #cacaca solid 1px;
+  border-collapse: separate;
+}
+.scoreTable table .checkItem {
+  width: 60px;
+}
+.scoreTable table .checkItem .state {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+}
+.scoreTable table .subject {
+  color: #333333;
+}
+.scoreTable table .score {
+  width: 250px;
+}
+.scoreTable table .score .number,
+.scoreTable table .score .number .name,
+.scoreTable table .score .number .point {
+  display: block;
+  line-height: 47px;
+  height: 47px;
+}
+.scoreTable table .score .number {
+  color: #303030;
+  float: right;
+  padding-left: 15px;
+  background: #fcd682;
+  background-repeat: no-repeat;
+  background-image: url("../images/account_score_bg_01.gif");
+}
+.scoreTable table .score .number .name {
+  /*footer 文字*/
+  font-size: 84.66%;
+  float: left;
+}
+.scoreTable table .score .number .point {
+  /*內文大標*/
+  font-size: 163.2%;
+  float: left;
+  padding-right: 15px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url("../images/account_score_bg_02.gif");
+}
+.scoreTable table tr td {
+  padding: 5px;
+  padding-right: 10px;
+  border-bottom: #cacaca dashed 1px;
+}
+.scoreTable table tr:last-child td {
+  border-bottom: none;
+}
+.scoreTable table .last td {
+  border-bottom: none;
+}
+.scoreTable table.complete .checkItem .state {
+  background-image: url("../images/account_state_bg_01.gif");
+}
+.scoreTable table.incomplete .checkItem .state {
+  background-image: url("../images/account_state_bg_02.gif");
+}
+.scoreTable table.incomplete .score .number {
+  background: #e2e2e2;
+}
+.scoreTable table.incomplete .score .number,
+.scoreTable table.incomplete .score .number .point {
+  background-position: left bottom;
+}
+
+.scoreBar {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 65px;
+  margin-left: 15px;
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: #efefef solid 1px;
+  background: #efefef;
+  width: 872px;
+  height: 48px;
+  /* width + height = 874 , 50*/
+}
+.scoreBar .badge,
+.scoreBar .crown {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.scoreBar .badge {
+  z-index: 3;
+  top: -27px;
+  left: -25px;
+  width: 75px;
+  height: 85px;
+  background-image: url("../images/account_score_dart_01.png");
+  background-image: url("../images/account_score_dart_01.gif") \9;
+}
+.scoreBar .crown {
+  z-index: 4;
+  top: -27px;
+  right: 15px;
+  width: 50px;
+  height: 35px;
+  background-image: url("../images/account_score_dart_02.png");
+  background-image: url("../images/account_score_dart_02.gif") \9;
+}
+.scoreBar dt,
+.scoreBar dd {
+  position: absolute;
+}
+.scoreBar dt strong,
+.scoreBar dd strong {
+  font-weight: normal;
+}
+.scoreBar .total {
+  z-index: 2;
+  top: -1px;
+  bottom: -1px;
+  right: 15px;
+  /*內文小標*/
+  font-size: 132.6%;
+  color: #848484;
+  padding-top: 15px;
+}
+.scoreBar .scored {
+  z-index: 1;
+  top: -51px;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+.scoreBar .scored .bar {
+  z-index: 1;
+  top: 50px;
+  width: 0%;
+  height: 50px;
+  position: absolute;
+  background-image: url("../images/account_score_bar.gif");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+.scoreBar .scored .flag {
+  z-index: 2;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 50px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: url("../images/account_score_num.png");
+  background-image: url("../images/account_score_num.gif") \9;
+  /*內文小標*/
+  font-size: 132.6%;
+  color: #f8d05a;
+}
+.scoreBar .scored .flag strong {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: #333 solid 1px;
+  background: #333;
+  display: block;
+  white-space: nowrap;
+  padding: 0 15px;
+  height: 38px;
+  line-height: 38px;
+}
+
+.classNote {
+  width: 220px;
+  float: left;
+  margin-top: 60px;
+  margin-right: 25px;
+  margin-left: 25px;
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.classNote:hover dt h3 {
+  margin-top: -42px;
+}
+.classNote:hover .text {
+  margin-top: 32px;
+}
+.classNote dt {
+  margin: 0 11%;
+  width: 78%;
+}
+.classNote .wrapper {
+  display: block;
+  line-height: 1.2;
+  margin-top: -25px;
+  padding-bottom: 17px;
+  border: none !important;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.classNote .wrapper .title {
+  display: block;
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  /*內文小標*/
+  font-size: 132.6%;
+  padding: 13px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 15px\9;
+}
+.classNote .wrapper .title a {
+  color: #fff !important;
+  text-decoration: none;
+}
+.classNote .text {
+  font-weight: normal;
+  width: 78%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.classNote .text a {
+  color: #333 !important;
+  text-decoration: none;
+}
+.classNote .text a:hover {
+  text-decoration: underline;
+}
+
+.classNote.style1,
+.singleClassTitle.style1 {
+  border: #00a4e3 solid 2px;
+}
+.classNote.style1 .wrapper,
+.singleClassTitle.style1 .wrapper {
+  background-image: url("../images/account_class_bg_01.gif");
+}
+.classNote.style1 .wrapper .title,
+.singleClassTitle.style1 .wrapper .title {
+  background: #00a4e3;
+}
+
+.classNote.style2,
+.singleClassTitle.style2 {
+  border: #f39605 solid 2px;
+}
+.classNote.style2 .wrapper,
+.singleClassTitle.style2 .wrapper {
+  background-image: url("../images/account_class_bg_02.gif");
+}
+.classNote.style2 .wrapper .title,
+.singleClassTitle.style2 .wrapper .title {
+  background: #f39605;
+}
+
+.classNote.style3,
+.singleClassTitle.style3 {
+  border: #e76da5 solid 2px;
+}
+.classNote.style3 .wrapper,
+.singleClassTitle.style3 .wrapper {
+  background-image: url("../images/account_class_bg_03.gif");
+}
+.classNote.style3 .wrapper .title,
+.singleClassTitle.style3 .wrapper .title {
+  background: #e76da5;
+}
+
+.classNote.style4,
+.singleClassTitle.style4 {
+  border: #00a888 solid 2px;
+}
+.classNote.style4 .wrapper,
+.singleClassTitle.style4 .wrapper {
+  background-image: url("../images/account_class_bg_04.gif");
+}
+.classNote.style4 .wrapper .title,
+.singleClassTitle.style4 .wrapper .title {
+  background: #00a888;
+}
+
+.classNote.style5,
+.singleClassTitle.style5 {
+  border: #47499c solid 2px;
+}
+.classNote.style5 .wrapper,
+.singleClassTitle.style5 .wrapper {
+  background-image: url("../images/account_class_bg_05.gif");
+}
+.classNote.style5 .wrapper .title,
+.singleClassTitle.style5 .wrapper .title {
+  background: #47499c;
+}
+
+.singleClassNoBorder {
+  border: none !important;
+}
+
+.singleClassTitle {
+  padding: 0;
+  margin-top: 0;
+  width: 45%;
+}
+.singleClassTitle .wrapper {
+  display: block;
+  line-height: 1.2;
+  margin-top: -25px;
+  padding-bottom: 17px;
+  border: none !important;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin-top: 0;
+}
+.singleClassTitle .wrapper .title {
+  display: block;
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  /*內文小標*/
+  font-size: 132.6%;
+  padding: 13px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 15px\9;
+  /*footer 文字*/
+  font-size: 73.44%;
+}
+
+.classContent {
+  margin: 0 auto;
+  width: 680px;
+}
+.classContent h3 {
+  /*內文大標*/
+  font-size: 163.2%;
+  margin-bottom: 30px;
+}
+.classContent .classVideo {
+  width: 680px;
+  margin-bottom: 15px;
+}
+.classContent > p {
+  /*footer 文字*/
+  font-size: 84.66%;
+  font-weight: bold;
+  padding-left: 40px;
+  height: 31px;
+  line-height: 38px;
+  background-repeat: no-repeat;
+  background-image: url("../images/account_class_bg_06.gif");
+  margin-bottom: 15px;
+}
+.classContent ol li {
+  float: left;
+  list-style: none;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.classContent ol li a {
+  background: #dddddd;
+  background-image: url("../images/account_class_bg_07.gif");
+  text-decoration: none;
+}
+.classContent ol li a:hover {
+  background: #f7c7d1;
+  background-image: url("../images/account_class_bg_07.gif");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.classContent ol li a:hover span {
+  background-position: right bottom;
+}
+.classContent ol li a span {
+  color: #333333;
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  padding: 0 20px;
+  background-position: right top;
+  background-image: url("../images/account_class_bg_08.gif");
+}
+.classContent ol li a,
+.classContent ol li a span {
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+}
+
+.score {
+  margin-top: 50px;
+}
+
+.score .number,
+.score .number .name,
+.score .number .point {
+  display: block;
+  line-height: 47px;
+  height: 47px;
+}
+
+.score .number {
+  color: #303030;
+  float: right;
+  padding-left: 15px;
+  background: #fcd682;
+  background-repeat: no-repeat;
+  background-image: url("../images/account_score_bg_01.gif");
+}
+
+.score .number .name {
+  /*footer 文字*/
+  font-size: 84.66%;
+  float: left;
+}
+
+.score .number .point {
+  /*內文大標*/
+  font-size: 163.2%;
+  float: left;
+  padding-right: 15px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url("../images/account_score_bg_02.gif");
+}
+
+.reply {
+  padding-top: 90px;
+}
+.reply .file {
+  height: 45px;
+  margin-bottom: 35px;
+  padding-left: 50px;
+  background-position: left top;
+  background-image: url("../images/account_class_bg_10.gif");
+}
+.reply .file .btn {
+  width: 131px;
+  height: 40px;
+  line-height: 40px;
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  color: #ff5274;
+  text-align: center;
+  cursor: pointer;
+  background-image: url("../images/account_class_bg_11.gif");
+}
+.reply .file .btn:active {
+  margin-top: 1px;
+  margin-left: 1px;
+}
+.reply .file .path {
+  width: 500px;
+  margin-left: 5px;
+  padding: 5px 0;
+  border: none;
+  background: #fff;
+  color: #a7a7a7;
+}
+.reply .send {
+  margin-top: 30px;
+  height: 45px;
+  text-align: right;
+}
+.reply .send .btn {
+  margin-right: 3px;
+  width: 220px;
+  height: 40px;
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  color: #fff;
+  cursor: pointer;
+  background-image: url("../images/account_class_bg_09.gif");
+}
+.reply .send .btn:active {
+  margin-top: 1px;
+  margin-right: 1px;
+}
+.reply .send .btn,
+.reply .file .btn,
+.reply .file {
+  border: none;
+  background-repeat: no-repeat;
+}
+.reply .text,
+.reply .text p {
+  color: #a7a7a7;
+}
+
+.examContent h3 {
+  /*內文大標*/
+  font-size: 163.2%;
+  margin-bottom: 30px;
+}
+.examContent dt {
+  clear: left;
+}
+.examContent dt span {
+  /*內文小標*/
+  font-size: 132.6%;
+  color: #333333;
+  line-height: 1.4;
+  font-weight: normal;
+}
+.examContent dd {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: #d9d9d9 solid 1px;
+}
+.examContent .trueOrfalse .true,
+.examContent .trueOrfalse .false {
+  padding-right: 30px;
+}
+.examContent .trueOrfalse .true input,
+.examContent .trueOrfalse .true .dart,
+.examContent .trueOrfalse .false input,
+.examContent .trueOrfalse .false .dart {
+  float: left;
+}
+.examContent .trueOrfalse .true .dart,
+.examContent .trueOrfalse .false .dart {
+  width: 60px;
+  height: 31px;
+  background-repeat: no-repeat;
+  background-position: 10px top;
+}
+.examContent .trueOrfalse .true .dart.active,
+.examContent .trueOrfalse .false .dart.active {
+  background-position: 10px bottom;
+}
+.examContent .trueOrfalse .true input,
+.examContent .trueOrfalse .false input {
+  margin-top: 10px;
+  margin-top: 5px\9;
+}
+.examContent .trueOrfalse .true .dart {
+  background-image: url("../images/account_exam_true.gif");
+}
+.examContent .trueOrfalse .false .dart {
+  background-image: url("../images/account_exam_false.gif");
+}
+.examContent .singleSelect,
+.examContent .multiSelect {
+  line-height: 2;
+}
+.examContent .singleSelect .textOption .title,
+.examContent .multiSelect .textOption .title {
+  padding-left: 5px;
+}
+.examContent .singleSelect .textOption.active .title,
+.examContent .multiSelect .textOption.active .title {
+  color: #35ad66;
+}
+.examContent .send {
+  margin-top: 30px;
+  height: 45px;
+}
+.examContent .send .btn {
+  margin-right: 3px;
+  width: 220px;
+  height: 40px;
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  color: #fff;
+  cursor: pointer;
+  background-image: url("../images/account_class_bg_09.gif");
+}
+.examContent .send .btn:active {
+  margin-top: 1px;
+  margin-right: 1px;
+}
+.examContent .send .btn {
+  border: none;
+  background-repeat: no-repeat;
+}

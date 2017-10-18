@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... 賽珍珠基金會 ... */
+.accrodion .text .info .text,
+.accrodion .text .info .text p {
+  font-family: 黑體, 'Microsoft YaHei', 微软雅黑体, 微軟雅黑體, 'Microsoft JhengHei', 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+.accrodion .text .info .text,
+.accrodion .text .info .text p {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.accrodion .text .info .text,
+.accrodion .text .info .text p {
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  color: #333333;
+  line-height: 1.8;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.inquireTitle {
+  padding-left: 40px;
+  background-position: left 37px;
+  background-image: url("../images/inquire_bg_01.gif");
+  background-repeat: no-repeat;
+}
+
+.accrodion {
+  margin-top: 30px;
+  width: 796px;
+}
+.accrodion .title {
+  margin-bottom: 15px;
+}
+.accrodion .title h3 a {
+  display: block;
+  position: relative;
+  /*內文小標*/
+  font-size: 132.6%;
+  line-height: 1.45;
+  padding-left: 40px;
+  font-weight: normal;
+  color: #333 !important;
+  text-decoration: none;
+}
+.accrodion .title h3 a .arrow {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 29px;
+  background-position: left top;
+  background-image: url("../images/inquire_bg_04.gif");
+  background-repeat: no-repeat;
+}
+.accrodion .title h3 a .arrow.active {
+  background-position: left bottom;
+}
+.accrodion .text {
+  margin-bottom: 35px;
+}
+.accrodion .text .info {
+  display: none;
+  background: #fffbe3;
+}
+.accrodion .text .info .upSpacer {
+  height: 10px;
+  background-image: url("../images/inquire_bg_02.gif");
+  background-position: left top;
+}
+.accrodion .text .info .bottomSpacer {
+  margin-top: 15px;
+  height: 10px;
+  background-image: url("../images/inquire_bg_03.gif");
+  background-position: left top;
+}
+.accrodion .text .info .text {
+  margin: 0 20px;
+}
+.accrodion .info time {
+  display: block;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: #8f8f8f;
+  /*footer 文字*/
+  font-size: 84.66%;
+}
+.accrodion .text,
+.accrodion .text .info,
+.accrodion .text .info p {
+  background-repeat: no-repeat;
+}

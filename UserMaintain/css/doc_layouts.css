@@ -1,0 +1,524 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... 擴思訊後台  ... */
+.main .doc .dataEditList .stepper li .tools button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+/* 資料管理操作 begin */
+.main .doc .mainOptionTool ul {
+  display: block;
+  width: 100%;
+}
+.main .doc .mainOptionTool ul li {
+  float: left;
+  margin-right: 8px;
+}
+.main .doc .mainOptionTool ul li.title .search {
+  width: 10em;
+}
+.main .doc .mainOptionTool ul li.new {
+  float: right;
+}
+.main .doc .mainOptionTool ul li button {
+  cursor: pointer;
+  padding: 5px 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  background: none;
+}
+.main .doc .mainOptionTool ul li.find button,
+.main .doc .mainOptionTool ul li.new button {
+  color: #fff;
+}
+.main .doc .mainOptionTool ul li.find button {
+  background-color: #87b2e0;
+}
+.main .doc .mainOptionTool ul li.new button {
+  background-color: #828083;
+}
+
+/* 資料管理操作 end */
+/*資料檢視表格 begin*/
+.main .doc .dataIndexList table tr.odd th,
+.main .doc .dataIndexList table tr.event th {
+  width: 170px;
+}
+.main .doc .dataIndexList table tr.odd th,
+.main .doc .dataIndexList table tr.odd td {
+  background-color: #d6d5d4 !important;
+}
+.main .doc .dataIndexList table tr.even th,
+.main .doc .dataIndexList table tr.even td {
+  background-color: #fff !important;
+}
+.main .doc .dataIndexList table tr th,
+.main .doc .dataIndexList table tr td {
+  color: #514f4c;
+  border: #fff solid 1px;
+}
+.main .doc .dataIndexList .leftAlignText {
+  padding: 0 1em;
+  text-align: left;
+}
+.main .doc .dataIndexList .operations {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 36px;
+}
+.main .doc .dataIndexList .operations.size-1 {
+  width: 180px;
+  padding: 0 10px;
+}
+.main .doc .dataIndexList .operations.size-single {
+  width: 35px;
+  padding: 0 10px;
+}
+.main .doc .dataIndexList .operations li {
+  float: left;
+  margin: 0 1px;
+}
+.main .doc .dataIndexList .operations li a {
+  display: block;
+  width: 33px;
+  height: 34px;
+  background-repeat: no-repeat;
+}
+.main .doc .dataIndexList .operations li a.view {
+  background-image: url("../images/data_index_view.png");
+}
+.main .doc .dataIndexList .operations li a.modify {
+  background-image: url("../images/data_index_modify.png");
+}
+.main .doc .dataIndexList .operations li a.remove {
+  background-image: url("../images/data_index_remove.png");
+}
+.main .doc .dataIndexList .operations li a.check {
+  background-image: url("../images/data_index_check.png");
+}
+.main .doc .dataIndexList .operations li a.disable {
+  background-image: url("../images/data_index_disable.png");
+}
+.main .doc .dataIndexList .operations li a.linked {
+  background-image: url("../images/data_index_linked.png");
+}
+.main .doc .dataIndexList .operations li a.submit {
+  background-image: url("../images/data_index_submit.png");
+}
+.main .doc .dataIndexList .operations li a.qrcode img {
+  width: 100%;
+}
+
+/*資料檢視表格 end*/
+/*資料新增功能 begin*/
+.main .doc .dataEditList .fullWidth {
+  width: 81%;
+}
+.main .doc .dataEditList .stepper {
+  display: block;
+  width: 100%;
+}
+.main .doc .dataEditList .stepper li {
+  margin-top: 8px;
+}
+.main .doc .dataEditList .stepper li textarea {
+  float: left;
+  width: 81%;
+  height: 77px;
+  resize: none;
+}
+.main .doc .dataEditList .stepper li .tools {
+  float: left;
+  margin-left: 15px;
+  width: 42px;
+  height: 83px;
+  position: relative;
+}
+.main .doc .dataEditList .stepper li .tools button {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 35px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main .doc .dataEditList .stepper li .tools button.moveUp {
+  top: 0;
+  background-image: url("../images/stepper_up.gif");
+}
+.main .doc .dataEditList .stepper li .tools button.moveDown {
+  bottom: 0;
+  background-image: url("../images/stepper_down.gif");
+}
+.main .doc .dataEditList .stepper li .tools.withUpload {
+  float: left;
+  width: 120px;
+}
+.main .doc .dataEditList .stepper li .tools.withUpload a {
+  display: block;
+  width: 78px;
+  height: 81px;
+  border: #918f8f solid 1px;
+  overflow: hidden;
+}
+
+/*資料新增功能 end*/
+/*資料檢視功能 begin*/
+.main .doc .dataViewList .stepPhoto {
+  display: block;
+  width: 78px;
+  height: 81px;
+  border: #918f8f solid 1px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.main .doc .dataViewList table {
+  margin-bottom: 15px;
+}
+.main .doc .dataViewList table th {
+  background-color: #f19ec2;
+  padding-left: 1em;
+}
+.main .doc .dataViewList table .c1 {
+  padding: 0 1em;
+  width: 65%;
+  background-color: #f7c8dc;
+  border-left: #fff solid 1px;
+}
+.main .doc .dataViewList table .c2 {
+  padding: 0 1em;
+  width: 25%;
+  background-color: #fbe6ef;
+  border-left: #fff solid 1px;
+}
+
+/*資料檢視功能 end*/
+/*課表匯入功能 begin*/
+.main .doc .timeTableOperation .optionSaveBtn {
+  margin-right: 0;
+}
+.main .doc .timeTableOperation .name {
+  width: 63%;
+}
+.main .doc .timeTableOperation .fileSelect {
+  position: relative;
+}
+.main .doc .timeTableOperation .fileSelect .url,
+.main .doc .timeTableOperation .fileSelect .fakeBtn {
+  float: left;
+  zoom: 1\9;
+}
+.main .doc .timeTableOperation .fileSelect .trueFile {
+  position: absolute;
+  width: 1px;
+  opacity: 0;
+  filter: alpha(opacity=0) \9;
+}
+.main .doc .timeTableOperation .fileSelect .fakeBtn {
+  margin-left: 25px;
+  line-height: 1.45;
+  background-color: #87b2e0;
+  width: 180px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+.main .doc .timeTableOperation .fileSelect .url {
+  width: 63%;
+}
+.main .doc .timeTableOperation .fileSelect .customBtn {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  zoom: 1\9;
+}
+.main .doc .timeTableOperation .importState li {
+  float: left;
+}
+.main .doc .timeTableOperation .importState .inRight,
+.main .doc .timeTableOperation .importState .inError {
+  float: right;
+}
+.main .doc .timeTableOperation .importState .inRight a,
+.main .doc .timeTableOperation .importState .inError a {
+  text-decoration: none;
+  color: #000;
+}
+.main .doc .timeTableOperation .importState .inError {
+  margin-left: 5px;
+}
+.main .doc .timeTableOperation .importState .inError a {
+  color: #ff0000;
+}
+.main .doc .timeTableOperation .importState .inNote {
+  width: 61%;
+}
+.main .doc .timeTableOperation .importState .inNote .note {
+  color: #ff0000;
+  font-size: 1em;
+}
+.main .doc .timeTableOperation .errorItem {
+  color: #ff0000;
+}
+.main .doc .timeTableOperation table.import tr th {
+  width: 13.5%;
+  background-color: #fff !important;
+}
+.main .doc .timeTableOperation table.timeTable tr.odd th,
+.main .doc .timeTableOperation table.timeTable tr.event th {
+  width: 170px;
+}
+.main .doc .timeTableOperation table.timeTable tr.odd th,
+.main .doc .timeTableOperation table.timeTable tr.odd td {
+  background-color: #d6d5d4 !important;
+}
+.main .doc .timeTableOperation table.timeTable tr.even th,
+.main .doc .timeTableOperation table.timeTable tr.even td {
+  background-color: #fff !important;
+}
+.main .doc .timeTableOperation table.timeTable tr th,
+.main .doc .timeTableOperation table.timeTable tr td {
+  color: #514f4c;
+  border: #fff solid 1px;
+}
+
+/*課表匯入功能 end*/
+/*使用者新增功能 begin*/
+.main .doc .addSystemUser .halfWidth {
+  width: 60%;
+}
+.main .doc .addSystemUser .smallWidth {
+  width: 30%;
+}
+.main .doc .addSystemUser .miniWidth {
+  width: 14%;
+}
+.main .doc .addSystemUser .name {
+  width: 60%;
+}
+.main .doc .addSystemUser .needMark {
+  color: #f1376e;
+}
+.main .doc .addSystemUser h2 {
+  padding: 0.5em;
+  background-color: #87b2e0;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*使用者新增功能 end*/
+/*使用者新增功能-劍聲　角色權限 begin*/
+.main .doc .definitionSystemUser .fullWidth {
+  width: 81%;
+}
+.main .doc .definitionSystemUser .memberControl li {
+  float: left;
+  margin: 0 10px;
+}
+.main .doc .definitionSystemUser .memberControl li.type,
+.main .doc .definitionSystemUser .memberControl li.title {
+  margin: 0;
+}
+.main .doc .definitionSystemUser .memberControl li.type {
+  width: 25%;
+}
+.main .doc .definitionSystemUser .memberControl li button {
+  cursor: pointer;
+  padding: 5px 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  background: none;
+  color: #fff;
+}
+.main .doc .definitionSystemUser .memberControl li .new {
+  background-color: #e87299;
+}
+.main .doc .definitionSystemUser .memberControl li .modify {
+  background-color: #7bb0df;
+}
+.main .doc .definitionSystemUser .memberControl li .kill {
+  background-color: #8dc741;
+}
+.main .doc .definitionSystemUser .memberTree {
+  border: #918f8f solid 1px;
+}
+
+/*使用者新增功能-劍聲　角色權限 end*/
+/*系統參數 begin*/
+.main .doc .systemSetting .colorBlue {
+  color: #a67bad;
+}
+.main .doc .systemSetting .fullWidth {
+  width: 81%;
+}
+.main .doc .systemSetting .halfWidth {
+  width: 62%;
+}
+.main .doc .systemSetting .smallWidth {
+  width: 31%;
+}
+.main .doc .systemSetting .itemEdit .btns li {
+  float: left;
+  margin-right: 15px;
+}
+.main .doc .systemSetting .itemEdit .btns .search {
+  width: 81%;
+}
+.main .doc .systemSetting .itemEdit .btns .search input {
+  width: 100%;
+}
+.main .doc .systemSetting .itemEdit .btns li button {
+  width: 31px;
+  height: 31px;
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.main .doc .systemSetting .itemEdit .btns li .addItem {
+  background-image: url("../images/item_edit_add.gif");
+}
+.main .doc .systemSetting .itemEdit .btns li .removeItem {
+  background-image: url("../images/item_edit_remove.gif");
+}
+.main .doc .systemSetting .itemEdit .listMode {
+  height: 140px;
+}
+
+/*系統參數 end*/
+/*web 新增教師 begin*/
+.main .doc .addNewTeacher .halfWidth {
+  width: 61%;
+}
+.main .doc .addNewTeacher .smallWidth {
+  width: 31%;
+}
+.main .doc .addNewTeacher .miniWidth {
+  width: 14%;
+}
+.main .doc .addNewTeacher h2 {
+  padding: 0.5em;
+  background-color: #8fc325;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*web 新增教師 end*/
+/*web 教師工作進度 begin*/
+.main .doc .workProgress .smallWidth {
+  width: 31%;
+}
+.main .doc .workProgress .timeSelect ul li {
+  float: left;
+  margin-right: 5px;
+}
+.main .doc .workProgress .timeSelect ul li.title {
+  padding: 0.28em 0;
+}
+.main .doc .workProgress .timeSelect button {
+  cursor: pointer;
+  padding: 5px 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  background: none;
+  color: #fff;
+  background-color: #87b2e0;
+}
+.main .doc .workProgress .timeSelect button.search {
+  background-color: #828083;
+}
+.main .doc .workProgress .timeSelect button.current {
+  color: #000;
+  background-color: #d6d5d4;
+}
+
+/*web 教師工作進度 end*/
+/*web 班級與學生管理 新增班級 begin*/
+/*web 班級與學生管理 新增班級 end*/
+/*web 教師工作進度 班級與學生管理 學生管理 新增學生 begin*/
+.main .doc .newStudent h2 {
+  padding: 0.5em;
+  background-color: #898989;
+  font-weight: bold;
+  color: #fff;
+}
+.main .doc .newStudent .profilePhoto {
+  width: 160px;
+  height: 175px;
+  overflow: hidden;
+  border: #8f8d8d solid 1px;
+}
+.main .doc .newStudent .fullWidth {
+  width: 81%;
+}
+.main .doc .newStudent .halfWidth {
+  width: 61%;
+}
+.main .doc .newStudent .miniWidth {
+  width: 14%;
+}
+.main .doc .newStudent .increasableData {
+  width: 80%;
+  /*padding: 15px 10px;*/
+  position: relative;
+}
+.main .doc .newStudent .increasableData table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  border: #cecdcd solid 1px;
+  margin-bottom: 25px;
+}
+.main .doc .newStudent .increasableData .addBtn {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  width: 33px;
+  height: 33px;
+}
+.main .doc .newStudent .increasableData .addBtn button {
+  width: 33px;
+  height: 33px;
+  border: none;
+  background: none;
+  background-image: url("../images/add_btn.gif");
+  cursor: pointer;
+}
+
+/*web 教師工作進度 班級與學生管理 學生管理 新增學生 end*/
+/*web 系統管理 帳號資訊 begin*/
+.main .doc .viewMember h2 {
+  background-color: #898989;
+}
+
+/*web 系統管理 帳號資訊 beginend*/

@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... 擴思訊後台  ... */
+.main .header .logoAndUser ul li.btn button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.main {
+  position: relative;
+  /*border: #000 solid 1px;*/
+}
+.main .sizeTag {
+  position: absolute;
+}
+.main .sizeTag .inie8, .main .sizeTag .in-1024, .main .sizeTag .in1024-1280, .main .sizeTag .in1280-1440, .main .sizeTag .in1440-1600, .main .sizeTag .in1600-1920, .main .sizeTag .in1920- {
+  display: none;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+.main .dialogBox.confirmBox {
+  width: 460px;
+}
+.main .dialogBox.helpBox {
+  width: 340px;
+}
+.main .dialogBox {
+  z-index: 100;
+  position: absolute;
+  background-color: #cdcccc;
+  padding: 7px;
+  padding-top: 0;
+}
+.main .dialogBox button {
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+.main .dialogBox button.off {
+  width: 46px;
+  height: 46px;
+  background-image: url("../images/dialog_box_close.gif");
+}
+.main .dialogBox button.save,
+.main .dialogBox button.cancle {
+  background-color: #e07297;
+  color: #fff;
+  width: 125px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.main .dialogBox .helpIcon {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/dialog_box_icon_1.gif");
+}
+.main .dialogBox .title {
+  position: relative;
+  height: 45px;
+}
+.main .dialogBox .title .helpIcon {
+  position: absolute;
+  left: 0;
+}
+.main .dialogBox .title .off {
+  position: absolute;
+  right: 0;
+}
+.main .dialogBox .ctx,
+.main .dialogBox .options {
+  background-color: #fff;
+}
+.main .dialogBox .ctx {
+  padding-top: 40px;
+  font-size: 1em;
+  line-height: 1.2;
+}
+.main .dialogBox .ctx.textMsg {
+  padding-right: 25px;
+  padding-left: 25px;
+  text-align: center;
+}
+.main .dialogBox .ctx.systemHelp {
+  padding: 15px;
+}
+.main .dialogBox .ctx.systemHelp ul li span {
+  display: block;
+  font-size: 1em;
+  line-height: 37px;
+  padding-left: 45px;
+  background-repeat: no-repeat;
+}
+.main .dialogBox .ctx.systemHelp ul li span.remove {
+  background-image: url("../images/dialog_box_icon_remove.gif");
+}
+.main .dialogBox .ctx.systemHelp ul li span.check {
+  background-image: url("../images/dialog_box_icon_check.gif");
+}
+.main .dialogBox .ctx.systemHelp ul li span.disable {
+  background-image: url("../images/dialog_box_icon_disable.gif");
+}
+.main .dialogBox .ctx.systemHelp ul li span.view {
+  background-image: url("../images/dialog_box_icon_view.gif");
+}
+.main .dialogBox .ctx.systemHelp ul li span.edit {
+  background-image: url("../images/dialog_box_icon_edit.gif");
+}
+.main .dialogBox .ctx.systemHelp ul li span.qrcode {
+  background-image: url("../images/dialog_box_icon_qrcode.gif");
+}
+.main .dialogBox .ctx.systemHelp ul li span.link {
+  background-image: url("../images/dialog_box_icon_link.gif");
+}
+.main .dialogBox .options {
+  padding: 25px 0;
+  text-align: center;
+}
+.main .dialogBox .options .save {
+  margin-right: 15px;
+}
+.main .dialogBox .options .cancle {
+  margin-left: 15px;
+}
+
+.main .header .logoAndUser h1 {
+  float: left;
+}
+.main .header .logoAndUser ul {
+  float: right;
+  padding-top: 16px;
+  padding-right: 3%;
+  padding-right: 30px\9;
+}
+.main .header .logoAndUser ul li {
+  float: left;
+}
+.main .header .logoAndUser ul li.name {
+  display: block;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/user.gif");
+}
+.main .header .logoAndUser ul li.name span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+.main .header .logoAndUser ul li.btn {
+  margin-left: 12px;
+}
+.main .header .logoAndUser ul li.btn button {
+  width: 112px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main .header .item-5 tr td {
+  width: 20%;
+}
+.main .header .item-5 tr td a:hover {
+  color: #eae040;
+}
+
+.main .header .item-4 tr td {
+  width: 25%;
+  position: relative;
+}
+.main .header .item-4 tr td .holder {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.main .header .item-4 tr td .holder .subLink {
+  display: none;
+  position: absolute;
+  /*top 隨解析度設定*/
+  left: 0;
+  right: 0;
+}
+.main .header .item-4 tr td .holder .subLink li {
+  border-bottom: #fff solid 1px;
+}
+.main .header .item-4 tr td .holder .subLink li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f8b86d;
+}
+.main .header .item-4 tr td .holder .subLink li .fixFontSize {
+  font-size: 1em;
+}
+.main .header .item-4 tr td .holder:hover ul {
+  display: block;
+  border-top: #fff solid 1px;
+}
+
+.main .header .topMenu {
+  width: 100%;
+}
+.main .header .topMenu tr td a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.main .header .topMenu tr td a > span {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.main .header .breadCrumb ul {
+  display: block;
+  width: 100%;
+  padding-left: 3%;
+  padding-left: 30px\9;
+}
+.main .header .breadCrumb ul li {
+  float: left;
+}
+.main .header .breadCrumb ul li.title span,
+.main .header .breadCrumb ul li.current span,
+.main .header .breadCrumb ul li.systemHelp span {
+  display: block;
+  color: #fff;
+}
+.main .header .breadCrumb ul li.current {
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-image: url("../images/breadcrumb_arrow.gif");
+}
+.main .header .breadCrumb ul li.systemHelp {
+  float: right;
+  margin-right: 6%;
+  padding-left: 60px\9;
+}
+.main .header .breadCrumb ul li.systemHelp span {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/system_help.gif");
+}
+.main .header .breadCrumb ul li.systemHelp span a {
+  display: block;
+  width: 19px;
+  height: 19px;
+}

@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... 賽珍珠基金會 ... */
+.views p, .docFull .views .accrodion .text .info,
+.docFull .views .accrodion .text .info p, .docFull .views .accrodion .title h3 a {
+  font-family: 黑體, 'Microsoft YaHei', 微软雅黑体, 微軟雅黑體, 'Microsoft JhengHei', 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+.views p, .docFull .views .accrodion .text .info,
+.docFull .views .accrodion .text .info p, .docFull .views .accrodion .title h3 a {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.views p, .docFull .views .accrodion .text .info,
+.docFull .views .accrodion .text .info p {
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  color: #333333;
+  line-height: 1.8;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.views p {
+  margin-bottom: 15px;
+}
+
+.views {
+  min-height: auto;
+}
+
+.aboutUs {
+  background-image: url("../images/class_bg_01.gif");
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.aboutUs .texts {
+  border: #d8d8d8 solid 1px !important;
+  margin: 0px 30px !important;
+  background: #FFF;
+}
+.aboutUs .texts .title {
+  padding-top: 23px !important;
+}
+.aboutUs .kv {
+  width: 590px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.aboutUs .kv img {
+  width: 100%;
+}
+
+.classNounTitle {
+  color: #5b006d;
+  padding-left: 90px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../images/class_bg_02.gif");
+  background-repeat: no-repeat;
+}
+
+.originalTitle {
+  position: relative;
+}
+
+.originalTitle > span {
+  position: absolute;
+  top: 40px;
+  width: 45px;
+  height: 32px;
+  padding-left: 0 38px !important;
+  line-height: 32px;
+}
+
+.originalTitle .jplayerGUI button {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 7px 0;
+  cursor: pointer;
+}
+.originalTitle .jplayerGUI button:active {
+  top: 1px;
+  left: 1px;
+}
+.originalTitle .jplayerGUI .jp-play {
+  background-image: url("../images/class_bg_03.gif");
+}
+.originalTitle .jplayerGUI .jp-stop {
+  background-image: url("../images/class_bg_04.gif");
+}
+.originalTitle .jplayerGUI .jp-stop:hover {
+  background-position: 7px bottom;
+}
+
+.originalTitle .xjp-no-solution,
+.originalTitle .xjp-no-solution span {
+  display: block !important;
+  font-size: 10px !important;
+  color: #ff0000 !important;
+  line-height: 1.3 !important;
+}
+
+.originalTitle .jp-no-solution {
+  display: none;
+  position: absolute;
+  left: 45px;
+  top: -10px;
+  padding: 5px;
+  width: 250px;
+  border: #333 solid 1px;
+  background: #fff;
+}
+
+.foreignTitle {
+  padding-top: 0 !important;
+}
+
+.docFull .views .accrodion {
+  width: 889px;
+}
+.docFull .views .accrodion .title,
+.docFull .views .accrodion .title h3,
+.docFull .views .accrodion .title h3 a,
+.docFull .views .accrodion .title h3 a .arrow,
+.docFull .views .accrodion .text {
+  background-repeat: no-repeat;
+}
+.docFull .views .accrodion .title {
+  padding-bottom: 5px;
+}
+.docFull .views .accrodion .title h3 {
+  position: relative;
+  padding: 0 15px;
+  padding-top: 10px;
+  background-position: left top;
+  font-weight: normal;
+}
+.docFull .views .accrodion .title h3 a {
+  display: block;
+  position: relative;
+  width: 780px;
+  padding-top: 5px;
+  padding-left: 50px;
+  /*width + padding-left = 830*/
+  background-position: left top;
+  /*內文小標*/
+  font-size: 132.6%;
+  color: #333333;
+  line-height: 1.45;
+  text-decoration: none;
+}
+.docFull .views .accrodion .title h3 a .arrow {
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 17px;
+  height: 42px;
+  background-position: left top;
+  background-image: url("../images/accrodion_arrow.png");
+  background-image: url("../images/accrodion_arrow.gif") \9;
+}
+.docFull .views .accrodion .title h3 a .active {
+  background-position: left bottom;
+}
+.docFull .views .accrodion .text {
+  clear: both;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-position: left bottom;
+}
+.docFull .views .accrodion .text .info,
+.docFull .views .accrodion .text .info p {
+  display: none;
+  padding-left: 50px;
+  padding-right: 32px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.docFull .views .accrodion .title.yellow {
+  background: #f8efca;
+}
+.docFull .views .accrodion .title.yellow h3 {
+  background-image: url("../images/accrodion_top_yellow.gif");
+}
+.docFull .views .accrodion .title.yellow h3 a {
+  background-image: url("../images/accrodion_bullet_yellow.gif");
+}
+.docFull .views .accrodion .text.yellow {
+  background-image: url("../images/accrodion_bg_yellow.gif");
+}
+.docFull .views .accrodion .text.yellow .info {
+  background: #f8efca;
+}
+.docFull .views .accrodion .title.purple {
+  background: #e4d5ef;
+}
+.docFull .views .accrodion .title.purple h3 {
+  background-image: url("../images/accrodion_top_purple.gif");
+}
+.docFull .views .accrodion .title.purple h3 a {
+  background-image: url("../images/accrodion_bullet_purple.gif");
+}
+.docFull .views .accrodion .text.purple {
+  background-image: url("../images/accrodion_bg_purple.gif");
+}
+.docFull .views .accrodion .text.purple .info {
+  background: #e4d5ef;
+}
+.docFull .views .accrodion .title.orange {
+  background: #f8d7ca;
+}
+.docFull .views .accrodion .title.orange h3 {
+  background-image: url("../images/accrodion_top_orange.gif");
+}
+.docFull .views .accrodion .title.orange h3 a {
+  background-image: url("../images/accrodion_bullet_orange.gif");
+}
+.docFull .views .accrodion .text.orange {
+  background-image: url("../images/accrodion_bg_orange.gif");
+}
+.docFull .views .accrodion .text.orange .info {
+  background: #f8d7ca;
+}
+.docFull .views .accrodion .title.grass {
+  background: #d2f8ca;
+}
+.docFull .views .accrodion .title.grass h3 {
+  background-image: url("../images/accrodion_top_grass.gif");
+}
+.docFull .views .accrodion .title.grass h3 a {
+  background-image: url("../images/accrodion_bullet_grass.gif");
+}
+.docFull .views .accrodion .text.grass {
+  background-image: url("../images/accrodion_bg_grass.gif");
+}
+.docFull .views .accrodion .text.grass .info {
+  background: #d2f8ca;
+}
+.docFull .views .accrodion .title.indigo {
+  background: #cde8f7;
+}
+.docFull .views .accrodion .title.indigo h3 {
+  background-image: url("../images/accrodion_top_indigo.gif");
+}
+.docFull .views .accrodion .title.indigo h3 a {
+  background-image: url("../images/accrodion_bullet_indigo.gif");
+}
+.docFull .views .accrodion .text.indigo {
+  background-image: url("../images/accrodion_bg_indigo.gif");
+}
+.docFull .views .accrodion .text.indigo .info {
+  background: #cde8f7;
+}

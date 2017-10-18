@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* Create with Compass + SCSS on windows */
+/* ... 賽珍珠基金會 ... */
+.docFull .docRight .wrapper .content .regData > tbody > tr > th, .docFull .docRight .wrapper .content .regData > tbody > tr > td, .docFull .docRight .wrapper .content p {
+  font-family: 黑體, 'Microsoft YaHei', 微软雅黑体, 微軟雅黑體, 'Microsoft JhengHei', 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+.docFull, .docFull .docRight .wrapper {
+  margin: 0 auto;
+}
+
+.docFull .docRight .wrapper .content .regData > tbody > tr > th, .docFull .docRight .wrapper .content .regData > tbody > tr > td, .docFull .docRight .wrapper .content p {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.docFull .docRight .wrapper .content .regData > tbody > tr > th, .docFull .docRight .wrapper .content .regData > tbody > tr > td, .docFull .docRight .wrapper .content p {
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  color: #333333;
+  line-height: 1.8;
+}
+
+.hiddenItem {
+  font-size: 1px;
+  line-height: 0;
+  text-indent: 0;
+  visibility: hidden;
+}
+
+.hideItem {
+  display: none;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.docFull {
+  width: 800px;
+  background: #f9c9aa;
+}
+.docFull .docRight {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  float: none;
+  width: 100%;
+}
+.docFull .docRight .upSpacer,
+.docFull .docRight .bottomSpacer {
+  height: 10px;
+  background-repeat: no-repeat;
+}
+.docFull .docRight .upSpacer {
+  background-image: url("../images/reg_bg_02.gif");
+}
+.docFull .docRight .bottomSpacer {
+  background-image: url("../images/reg_bg_03.gif");
+}
+.docFull .docRight .wrapper {
+  border: none;
+  width: 680px;
+}
+.docFull .docRight .wrapper .title {
+  margin: 15px auto;
+  width: 110px;
+  padding-left: 30px;
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  font-weight: bold;
+  line-height: 26px;
+  color: #333333;
+  background-image: url("../images/reg_bg_01.gif");
+  background-repeat: no-repeat;
+}
+.docFull .docRight .wrapper .privateRule {
+  color: #00a4e3;
+  text-decoration: none;
+}
+.docFull .docRight .wrapper .privateRule:hover {
+  text-decoration: underline;
+}
+.docFull .docRight .wrapper .send {
+  margin: 20px 0;
+  text-align: center;
+}
+.docFull .docRight .wrapper .send input {
+  border: none;
+  /*側邊攔標題,內文,標準尺寸*/
+  font-size: 102%;
+  font-weight: bold;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  background-image: url("../images/reg_bg_04.gif");
+  cursor: pointer;
+}
+.docFull .docRight .wrapper .send input:active {
+  border: none;
+  padding-right: 1px;
+  line-height: 42px;
+}
+.docFull .docRight .wrapper .content {
+  padding: 15px 0;
+  background: #fff;
+}
+.docFull .docRight .wrapper .content .regData {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 25px;
+}
+.docFull .docRight .wrapper .content .regData > tbody > tr > th {
+  width: 185px;
+  color: #f5904f;
+}
+.docFull .docRight .wrapper .content .regData > tbody > tr > td {
+  position: relative;
+  color: #333333;
+  padding-left: 30px;
+}
+.docFull .docRight .wrapper .content .regData > tbody > tr > td > select,
+.docFull .docRight .wrapper .content .regData > tbody > tr > td > label > .textInput,
+.docFull .docRight .wrapper .content .regData > tbody > tr > td > label > select {
+  width: 45%;
+  padding: 10px 15px;
+}
+.docFull .docRight .wrapper .content .regData > tbody > tr > td > label > .textInput {
+  /* 從IE9 開始支援 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: #cccccc solid 1px;
+  color: #333;
+}
+.docFull .docRight .wrapper .content .fakeDatepickerHolder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 450px;
+}
+.docFull .docRight .wrapper .content p {
+  padding: 15px;
+}
